@@ -16,7 +16,7 @@ class Badge(Resource):
         _id = str(database.db.Badges.insert_one(
             {
                 'name':request.json['name'],
-                'last_name':request.json['last_name'],
+                #'last_name':request.json['last_name'],
                 'profile_pic':request.json['profile_pic'],
                 'hero_badge':request.json['hero_badge'],
                 'age':request.json['age'],
@@ -24,7 +24,7 @@ class Badge(Resource):
                 'followers':request.json['followers'],
                 'likes':request.json['likes'],
                 'posts':request.json['posts'],
-                'post':request.json['post'],
+                #'post':request.json['post'],
             }
         ).inserted_id)
 
