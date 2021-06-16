@@ -41,7 +41,7 @@ class Badge(Resource):
             {
                 '$set':{
                 'name':response['name'],
-                'last_name':response['last_name'],
+                #'last_name':response['last_name'],
                 'profile_pic':response['profile_pic'],
                 'hero_badge':response['hero_badge'],
                 'age':response['age'],
@@ -49,7 +49,7 @@ class Badge(Resource):
                 'followers':response['followers'],
                 'likes':response['likes'],
                 'posts':response['posts'],
-                'post':response['post'],
+                #'post':response['post'],
                 }
             }
         )
